@@ -1,5 +1,5 @@
 FROM golang:1.14-alpine AS build
-ENV GCO_ENABLED=0
+ENV CGO_ENABLED=0
 RUN mkdir /app
 ADD . /app
 WORKDIR /app
